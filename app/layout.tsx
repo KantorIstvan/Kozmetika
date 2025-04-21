@@ -35,10 +35,10 @@ export default function RootLayout({
               <Link href="">Sminktetoválás</Link>
             </li>
             <li>
-              <Link href="">Árlista</Link>
+              <Link href="/arlista">Árlista</Link>
             </li>
             <li className="bg-dark hover:bg-darkest transition duration-150 text-lightest px-5 py-2 rounded-[15px]">
-              <Link href="">Időpontfoglalás</Link>
+              <Link href="/idopontfoglalo">Időpontfoglalás</Link>
             </li>
           </ul>
         </nav>
