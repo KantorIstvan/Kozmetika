@@ -1,2 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+@theme {
+  --color-darkest: #2c3628;
+  --color-dark: #4b5745;
+  --color-medium: #7a8474;
+  --color-light: #a2a39a;
+  --color-lightest: #ccc7c3;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
