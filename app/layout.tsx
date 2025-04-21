@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <nav className="bg-lightest flex justify-between items-center px-15 py-5 text-darkest text-[18px]">
           <div>
-            <p>LOGO</p>
+            <Link href="/">LOGO</Link>
           </div>
           <ul className="flex gap-10 items-center">
             <li>
