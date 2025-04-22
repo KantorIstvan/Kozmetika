@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       {/* Szolgáltatások */}
-      <div className="bg-light px-15 py-15">
+      <div id="szolgaltatasok" className="bg-light px-15 py-15">
         <div className="flex items-center pb-15 w-full">
           <div className="flex w-full items-center gap-15 ">
             <div className="w-1/2 relative h-[550px]">
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </div>
       {/* Sminktetoválás */}
-      <div className="bg-lightest px-20 py-15">
+      <div id="sminktetovalas" className="bg-lightest px-20 py-10">
         <div>
           <h2 className="text-center text-[40px] font-bold">
             Sminktetoválásaim
@@ -210,6 +210,7 @@ export default function Home() {
           </Card>
         </div>
       </div>
+      {/* GyakoriKérdések */}
     </div>
   );
 }

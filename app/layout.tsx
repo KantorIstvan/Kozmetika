@@ -29,10 +29,10 @@ export default function RootLayout({
           </div>
           <ul className="flex gap-10 items-center">
             <li>
-              <Link href="">Szolgáltatások</Link>
+              <Link href="/#szolgaltatasok">Szolgáltatások</Link>
             </li>
             <li>
-              <Link href="">Sminktetoválás</Link>
+              <Link href="/#sminktetovalas">Sminktetoválás</Link>
             </li>
             <li>
               <Link href="/arlista">Árlista</Link>
