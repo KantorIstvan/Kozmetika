@@ -116,13 +116,13 @@ export default function Home() {
           <Carousel className="w-full">
             <CarouselContent>
               {Array.from({ length: 10 }).map((_, index) => (
-                <CarouselItem key={index} className="pl-1 basis-1/3">
-                  <div className="p-1 w-[300px] relative aspect-square">
+                <CarouselItem key={index} className="pl-15 py-5 basis-1/3">
+                  <div className="p-1 w-[350px] relative aspect-square">
                     <Image
                       src={placeholderImage}
                       alt={`Portfolio image ${index + 1}`}
                       fill
-                      className="rounded-[20px] object-cover"
+                      className="rounded-[20px] object-cover shadow-md"
                     />
                   </div>
                 </CarouselItem>
