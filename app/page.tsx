@@ -7,6 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -131,6 +137,77 @@ export default function Home() {
             <CarouselPrevious className="left-2" />
             <CarouselNext className="right-2" />
           </Carousel>
+        </div>
+      </div>
+      {/* Sminktetoválás */}
+      <div className="bg-lightest px-20 py-15">
+        <div>
+          <h2 className="text-center text-[40px] font-bold">
+            Sminktetoválásaim
+          </h2>
+          <p className="text-center text-lg pt-5">
+            A célom, hogy reggelente tükörbe nézve csak annyit mondj:
+            &ldquo;Igen, ez vagyok én.&rdquo;
+          </p>
+        </div>
+        <div className="flex items-center justify-center gap-15 py-15">
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+              <Image
+                src={placeholderImage}
+                alt="Description of the image"
+                fill
+                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                sizes="(max-width: 768px) 100vw"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-[24px]">Szemöldök</CardTitle>
+              <hr className="border-t-3 rounded-full" />
+              <CardDescription className="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae, cumque.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+              <Image
+                src={placeholderImage}
+                alt="Description of the image"
+                fill
+                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                sizes="(max-width: 768px) 100vw"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-[24px]">Szempillasűrűsítés</CardTitle>
+              <hr className="border-t-3 rounded-full" />
+              <CardDescription className="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae, cumque.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+              <Image
+                src={placeholderImage}
+                alt="Description of the image"
+                fill
+                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                sizes="(max-width: 768px) 100vw"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-[24px]">Ajak satírozás</CardTitle>
+              <hr className="border-t-3 rounded-full" />
+              <CardDescription className="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae, cumque.
+              </CardDescription>
+            </CardHeader>
+          </Card>
         </div>
       </div>
     </div>
