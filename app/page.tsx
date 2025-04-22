@@ -47,7 +47,7 @@ export default function Home() {
               lélekben egyaránt.
             </p>
           </div>
-          <div className="w-1/2 relative h-[600px]">
+          <div className="w-1/2 relative h-[550px]">
             <Image
               src={placeholderImage}
               alt="Description of the image"
@@ -62,7 +62,7 @@ export default function Home() {
       <div className="bg-light px-15 py-15">
         <div className="flex items-center pb-15 w-full">
           <div className="flex w-full items-center gap-15 ">
-            <div className="w-1/2 relative h-[600px]">
+            <div className="w-1/2 relative h-[550px]">
               <Image
                 src={placeholderImage}
                 alt="Description of the image"
@@ -151,7 +151,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex items-center justify-center gap-15 py-15">
-          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
               <Image
                 src={placeholderImage}
@@ -170,7 +170,7 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
           </Card>
-          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
               <Image
                 src={placeholderImage}
@@ -189,7 +189,7 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
           </Card>
-          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none">
+          <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
               <Image
                 src={placeholderImage}
