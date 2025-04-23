@@ -273,7 +273,28 @@ export default function Home() {
         </div>
       </div>
       {/* Elérhetőség */}
-      <div className="bg-lightest px-15 py-15"></div>
+      <div className="bg-lightest px-15 py-15">
+        <div>
+          <h2 className="text-[40px] font-bold">Itt megtalálsz</h2>
+          <p className="text-lg">
+            Örömmel várom jelentkezésedet személyre szabott konzultációra vagy
+            időpontfoglalásra.
+          </p>
+        </div>
+        <div className="mt-8 w-full rounded-[15px] overflow-hidden shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877.83606174397!2d22.098601664922793!3d48.2708936331019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4738ee9e2d493705%3A0x4903a780fafeed4b!2sF%C3%A9nyeslitke%2C%20Kossuth%20u.%20136%2C%204621!5e0!3m2!1shu!2shu!4v1745396704942!5m2!1shu!2shu"
+            width="100%"
+            height="600"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className=""></div>
     </div>
   );
 }
