@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className="w-1/2 relative h-[550px]">
             <Image
-              src={placeholderImage}
+              src="/assets/download.jpg"
               alt="Description of the image"
               fill
               className="rounded-[20px] shadow-md object-cover"
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="flex w-full items-center gap-15 ">
             <div className="w-1/2 relative h-[550px]">
               <Image
-                src={placeholderImage}
+                src="/assets/kozmetika.jpg"
                 alt="Description of the image"
                 fill
                 className="rounded-[20px] shadow-md object-cover"
@@ -128,11 +128,11 @@ export default function Home() {
         <div className="w-full">
           <Carousel className="w-full">
             <CarouselContent>
-              {Array.from({ length: 10 }).map((_, index) => (
-                <CarouselItem key={index} className="pl-15 py-5 basis-1/3">
-                  <div className="p-1 w-[350px] relative aspect-square">
+              {Array.from({ length: 9 }).map((_, index) => (
+                <CarouselItem key={index} className="pl-9 py-5 basis-1/3">
+                  <div className="p-1 w-[400px] relative aspect-square">
                     <Image
-                      src={placeholderImage}
+                      src={`/assets/carousel${index + 1}.jpg`}
                       alt={`Portfolio image ${index + 1}`}
                       fill
                       className="rounded-[20px] object-cover shadow-md"
@@ -141,8 +141,10 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
+            <div className="flex justify-end gap-2 mt-4">
+              <CarouselPrevious className="static transform-none border-white" />
+              <CarouselNext className="static transform-none border-white" />
+            </div>
           </Carousel>
         </div>
       </div>
@@ -159,12 +161,12 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center gap-15 py-15">
           <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10 overflow-hidden rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0">
               <Image
-                src={placeholderImage}
+                src="/assets/szemoldok.jpg"
                 alt="Description of the image"
                 fill
-                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                className="object-cover transform scale-130 translate-x-8 translate-y-10"
                 sizes="(max-width: 768px) 100vw"
               />
             </div>
@@ -178,12 +180,12 @@ export default function Home() {
             </CardHeader>
           </Card>
           <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+            <div className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 relative w-full h-[250px] -mt-8 mx-auto z-10 overflow-hidden">
               <Image
-                src={placeholderImage}
+                src="/assets/szempilla.jpg"
                 alt="Description of the image"
                 fill
-                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                className="object-cover transform scale-160 -translate-x-6 translate-y-10 -rotate-90"
                 sizes="(max-width: 768px) 100vw"
               />
             </div>
@@ -197,12 +199,12 @@ export default function Home() {
             </CardHeader>
           </Card>
           <Card className="w-[350px] h-[450px] bg-white shadow-md overflow-visible border-none transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10">
+            <div className="relative w-full h-[250px] -mt-8 mx-auto z-10 rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 overflow-hidden">
               <Image
-                src={placeholderImage}
+                src="/assets/ajak.jpg"
                 alt="Description of the image"
                 fill
-                className="rounded-tl-[20px] rounded-tr-[20px] rounded-bl-0 rounded-br-0 object-cover"
+                className="object-cover scale-100"
                 sizes="(max-width: 768px) 100vw"
               />
             </div>
@@ -264,7 +266,7 @@ export default function Home() {
           </div>
           <div className="w-1/2 relative h-[550px]">
             <Image
-              src={placeholderImage}
+              src="/assets/questions.jpg"
               alt="Description of the image"
               fill
               className="rounded-[20px] shadow-md object-cover"
@@ -306,10 +308,10 @@ export default function Home() {
               <p className="text-sm">Telefon: +36 30 123 4567</p>
             </div>
           </div>
-          <div className="text-white">
+          <div className="text-white ">
             <h2 className="text-[24px] font-bold">Navigáció</h2>
             <hr className="border-1 rounded-full my-2" />
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 hover:text-darkest">
               <Link href="/#szolgaltatasok" className="text-sm">
                 Szolgáltatások
               </Link>
