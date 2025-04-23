@@ -13,6 +13,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -211,6 +217,63 @@ export default function Home() {
         </div>
       </div>
       {/* GyakoriKérdések */}
+      <div className="bg-light px-15 py-15">
+        <h2 className="font-bold text-[40px]">Gyakori kérdések</h2>
+        <div className="flex items-start justify-center gap-15 py-15">
+          <div className="w-1/2 py-8">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-[600px]"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                  Hogyan készüljek egy arckezelésre?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Semmi különösre nincs szükség-jössz ahogy vagy. Ha sminkben
+                  érkezel,azt le fogom tisztítani. Kérlek ne használj hámlasztó
+                  termékeket aznap!
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>
+                  Fájdalmas a savas hámlasztás?
+                </AccordionTrigger>
+                <AccordionContent>
+                  A hámlasztás érzete enyhe bizsergéstől közepes melegségig
+                  terjedhet,de nem fájdalmas. A koreai hámlasztókat
+                  kíméletesen,biztonságosan,fokozatosan építem be-figyelek a
+                  komfortodra!
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>
+                  Mire figyeljek sminktetoválás után?
+                </AccordionTrigger>
+                <AccordionContent>
+                  A friss tetoválás után fontos a megfelelő otthoni
+                  utóápolás:részletes útmutatót fogsz kapni tőlem. de mindenképp
+                  kerülni kell 2-4 hétig a szaunát,napozást,uszodát,a sminket
+                  néhány napig.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+          <div className="w-1/2 relative h-[550px]">
+            <Image
+              src={placeholderImage}
+              alt="Description of the image"
+              fill
+              className="rounded-[20px] shadow-md object-cover"
+              sizes="(max-width: 768px) 75vw, 50vw"
+            />
+          </div>
+        </div>
+      </div>
+      {/* Elérhetőség */}
+      <div className="bg-lightest px-15 py-15"></div>
     </div>
   );
 }
