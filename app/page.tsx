@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -294,7 +295,37 @@ export default function Home() {
         </div>
       </div>
       {/* Footer */}
-      <div className=""></div>
+      <div className="bg-dark px-15 py-15">
+        <div className="flex items-start gap-8 justify-start">
+          <div className=" text-white ">
+            <h2 className="text-[24px] font-bold">Kapcsolat</h2>
+            <hr className="border-1 rounded-full my-2" />
+            <div className="flex flex-col gap-2">
+              <p className="text-sm">Cím: 4621 Fényeslitke, Kossuth u. 136.</p>
+              <p className="text-sm">Email: asd@asd.com</p>
+              <p className="text-sm">Telefon: +36 30 123 4567</p>
+            </div>
+          </div>
+          <div className="text-white">
+            <h2 className="text-[24px] font-bold">Navigáció</h2>
+            <hr className="border-1 rounded-full my-2" />
+            <div className="flex flex-col gap-2">
+              <Link href="/#szolgaltatasok" className="text-sm">
+                Szolgáltatások
+              </Link>
+              <Link href="/#sminktetovalas" className="text-sm">
+                Sminktetoválásaim
+              </Link>
+              <Link href="/arlista" className="text-sm">
+                Árlista
+              </Link>
+              <Link href="/idopontfoglalo" className="text-sm">
+                időpontfoglalás
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
