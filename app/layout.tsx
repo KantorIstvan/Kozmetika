@@ -12,7 +12,14 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Kozmetika",
-  description: "Kozm",
+  description: "Kozmetika",
+  icons: {
+    icon: [
+      { url: "/assets/makeup.png" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: { url: "/apple-icon.png", sizes: "180x180" },
+  },
 };
 
 export default function RootLayout({

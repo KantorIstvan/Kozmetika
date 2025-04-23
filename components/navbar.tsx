@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-lightest flex justify-between items-center px-4 sm:px-8 md:px-15 py-5 text-darkest text-[18px] relative">
+    <nav className="bg-lightest flex justify-between items-center px-4 sm:px-8 md:px-16 py-5 text-darkest text-[18px] relative">
       <div>
         <Link href="/">
           <Image
