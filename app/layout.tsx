@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -25,7 +26,15 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <nav className="bg-lightest flex justify-between items-center px-15 py-5 text-darkest text-[18px]">
           <div>
-            <Link href="/">LOGO</Link>
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                alt="Logo"
+                width={500}
+                height={500}
+                className="w-[150px] h-auto"
+              />
+            </Link>
           </div>
           <ul className="flex gap-10 items-center">
             <li>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import placeholderImage from "../assets/placeholder.png";
+/* import placeholderImage from "../assets/placeholder.png"; */
 import {
   Carousel,
   CarouselContent,
